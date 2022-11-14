@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <Button
+        android:id="@+id/camera"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="100dp"
+        android:drawableTop="@drawable/camera"
+        android:text="カメラで登録"
+        android:textSize="40sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/finger"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="60dp"
+        android:drawableTop="@drawable/finger"
+        android:text="手打ちで登録"
+        android:textSize="40sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/camera" />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/home_bar"
+            android:layout_width="100dp"
+            android:layout_height="70dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="580dp"
+            android:layout_weight="60"
+            android:background="@drawable/button_state"
+            android:drawableTop="@drawable/home" />
+
+        <Button
+            android:id="@+id/rif_bar"
+            android:layout_width="100dp"
+            android:layout_height="70dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="580dp"
+            android:layout_weight="60"
+            android:background="@drawable/button_state"
+            android:drawableTop="@drawable/rif" />
+
+        <Button
+            android:id="@+id/date_bar"
+            android:layout_width="100dp"
+            android:layout_height="70dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="580dp"
+            android:layout_weight="60"
+            android:background="@drawable/button_state"
+            android:drawableTop="@drawable/time" />
+
+        <Button
+            android:id="@+id/memo_bar"
+            android:layout_width="100dp"
+            android:layout_height="70dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="580dp"
+            android:layout_weight="60"
+            android:background="@drawable/button_state"
+            android:drawableTop="@drawable/memo" />
+
+        <Button
+            android:id="@+id/user_bar"
+            android:layout_width="100dp"
+            android:layout_height="70dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="580dp"
+            android:layout_marginRight="15dp"
+            android:layout_weight="60"
+            android:background="@drawable/button_state"
+            android:drawableTop="@drawable/user" />
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

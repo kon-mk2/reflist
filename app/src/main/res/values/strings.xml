@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">Home</string>
+    <string name="rif_title">りふりすと</string>
+    <string name="rif_list">冷蔵庫リスト</string>
+    <string name="rif_datelist">賞味期限リスト</string>
+    <string name="rif_memo">メモ一覧</string>
+    <string name="hello_world">You are logged in!</string>
+    <string name="action_settings">Settings</string>
+    <string name="action_logout">Logout</string>
+    <string name="complete">ろぐいんかんりょう!!</string>
+    <string name="todo">TODO</string>
+</resources>

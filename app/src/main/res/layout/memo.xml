@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:isScrollContainer="false"
+        android:id="@+id/scrollView">
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            tools:layout_editor_absoluteX="48dp"
+            tools:layout_editor_absoluteY="154dp">
+
+
+            <ListView
+                android:id="@+id/listView"
+                android:layout_width="match_parent"
+                android:layout_height="543dp"
+                android:layout_marginStart="1dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginEnd="1dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/constraintLayout" />
+
+
+            <ImageButton
+                android:id="@+id/add"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="500dp"
+                android:layout_marginLeft="350dp"
+                android:background="@drawable/button_circle"
+                app:srcCompat="@drawable/ic_baseline_add_circle_24"
+                tools:layout_editor_absoluteX="297dp"
+                tools:layout_editor_absoluteY="4dp" />
+
+        </FrameLayout>
+    </ScrollView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent">
+
+        <Button
+            android:id="@+id/home_bar"
+            android:layout_width="100dp"
+            android:layout_height="70dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="580dp"
+            android:layout_weight="60"
+            android:background="@drawable/button_state"
+            android:drawableTop="@drawable/home" />
+
+        <Button
+            android:id="@+id/rif_bar"
+            android:layout_width="100dp"
+            android:layout_height="70dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="580dp"
+            android:layout_weight="60"
+            android:background="@drawable/button_state"
+            android:drawableTop="@drawable/rif" />
+
+        <Button
+            android:id="@+id/date_bar"
+            android:layout_width="100dp"
+            android:layout_height="70dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="580dp"
+            android:layout_weight="60"
+            android:background="@drawable/button_state"
+            android:drawableTop="@drawable/time" />
+
+        <Button
+            android:id="@+id/memo_bar"
+            android:layout_width="100dp"
+            android:layout_height="70dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="580dp"
+            android:layout_weight="60"
+            android:background="@drawable/button_state"
+            android:drawableTop="@drawable/memo" />
+
+        <Button
+            android:id="@+id/user_bar"
+            android:layout_width="100dp"
+            android:layout_height="70dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="580dp"
+            android:layout_marginRight="15dp"
+            android:layout_weight="60"
+            android:background="@drawable/button_state"
+            android:drawableTop="@drawable/user" />
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
